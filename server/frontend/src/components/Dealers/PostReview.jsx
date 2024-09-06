@@ -5,6 +5,7 @@ import "../assets/style.css";
 import Header from '../Header/Header';
 
 
+
 const PostReview = () => {
   const [dealer, setDealer] = useState({});
   const [review, setReview] = useState("");
@@ -76,6 +77,7 @@ const PostReview = () => {
   }
 
   const get_cars = async ()=>{
+    alert(carmodels_url)
     const res = await fetch(carmodels_url, {
       method: "GET"
     });

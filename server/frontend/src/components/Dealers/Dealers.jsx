@@ -12,7 +12,7 @@ const Dealers = () => {
   // let root_url = window.location.origin
   let dealer_url ="/get_dealers";
 
-  let dealer_url_by_state = "/djangoapp/get_dealers/";
+  let dealer_url_by_state = "/get_dealers/";
  
   const filterDealers = async (state) => {
     dealer_url_by_state = dealer_url_by_state+state;
