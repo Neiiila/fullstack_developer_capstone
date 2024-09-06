@@ -3,15 +3,13 @@ from .models import CarMake, CarModel
 
 
 admin.site.register(CarMake)
-
 admin.site.register(CarModel)
-
-
 
 
 @admin.register(CarMake)
 class CarMakeAdmin(admin.ModelAdmin):
     list_display = ('name', 'description')
+
 
 @admin.register(CarModel)
 class CarModelAdmin(admin.ModelAdmin):
